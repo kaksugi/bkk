@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin:3px;
+	padding:inherit;
+}
+table.report{
+	background:#FFF;
+	border:1px #39C solid;
+	border-collapse:collapse;
+	
+}
+.tabel_reg{
+		border:1px solid #CECECE;border-right-width:2px;border-bottom-width:2px
+		}
+.tabel_reg tr td{
+			border-bottom:1px solid #CECECE;
+			height:26px;
+			
+		}
+table.report th{
+	border:1px #39C  solid;
+	border-collapse:collapse;
+	padding:6px;
+	background-color:#09F;
+	text-align:center;
+	font-style:bold;
+	color: #FFF;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+table.report td{
+	padding:4px;
+	border:1px #39C  solid;
+	border-collapse:collapse;
+	
+	
+}
+.header{
+	font-size:12px;
+	background-color:#39C;
+	text-align:center;
+	color: #FFF;
+	
+}
+.genap{
+	background-color:#FFF;
+}
+.ganjil{
+	background-color:#CDFFCC;
+}
+table.laporan{
+	background:#FFF;
+	border:1px #39C solid;
+	border-collapse:collapse;
+}
