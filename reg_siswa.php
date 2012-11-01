@@ -350,12 +350,48 @@
               </tr>
               <tr>
                 <td align="center" valign="middle">3</td>
+                <td>Baju, Ukuran Baju</td>
+                <td>:</td>
+                <td><select name="select31" id="select33">
+                  <option value="-">[ Pilih Type Baju ]</option>
+                  <option value="Lengan Panjang">Lengan Panjang</option>
+                  <option value="Lengan Pendek">Lengan Pendek</option>
+                </select>
+                  , 
+                  <select name="select32" id="select34">
+                    <option value="-">[ Pilih Ukuran ]</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle">4</td>
+                <td>Ukuran Sepatu</td>
+                <td>:</td>
+                <td><select name="select33" id="select35">
+                  <option value="-">[ Pilih Ukuran Sepatu ]</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle">4</td>
                 <td>Berkacamata</td>
                 <td>:</td>
                 <td><select name="select6" id="select6">
                   <option value="Tidak">Tidak</option>
                   <option value="Ya">Ya</option>
-</select></td>
+  </select></td>
               </tr>
               <tr>
                 <td align="center" valign="middle">&nbsp;</td>
@@ -370,7 +406,7 @@
                 <td><input name="textfield32" type="text" id="textfield32" size="6" /></td>
               </tr>
               <tr>
-                <td align="center" valign="middle">4</td>
+                <td align="center" valign="middle">5</td>
                 <td>Merokok</td>
                 <td>:</td>
                 <td><select name="select7" id="select7">
@@ -386,7 +422,7 @@
                   Batang/Hari</td>
               </tr>
               <tr>
-                <td align="center" valign="middle">5</td>
+                <td align="center" valign="middle">6</td>
                 <td>Kidal</td>
                 <td>:</td>
                 <td><select name="select8" id="select8">
@@ -395,7 +431,7 @@
                 </select></td>
               </tr>
               <tr>
-                <td align="center" valign="middle">6</td>
+                <td align="center" valign="middle">7</td>
                 <td>Pernah Sakit Yang Lama Sembuh</td>
                 <td>:</td>
                 <td><select name="select9" id="select9">
@@ -410,7 +446,7 @@
                 <td><input name="textfield34" type="text" id="textfield34" size="30" /></td>
               </tr>
               <tr>
-                <td align="center" valign="middle">7</td>
+                <td align="center" valign="middle">8</td>
                 <td>Cacat Fisik</td>
                 <td>:</td>
                 <td><select name="select10" id="select10">
@@ -497,6 +533,42 @@
                   <option value="Cukup">Cukup</option>
                   <option value="Kurang">Kurang</option>
                 </select></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle">4</td>
+                <td>Nama Kursus/Seminar</td>
+                <td>:</td>
+                <td><input type="text" name="textfield59" id="textfield62" /></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle">&nbsp;</td>
+                <td>Bidang Kursus/Seminar</td>
+                <td>:</td>
+                <td><input type="text" name="textfield59" id="textfield61" /></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle">&nbsp;</td>
+                <td>Hasil</td>
+                <td>:</td>
+                <td><select name="select33" id="select36">
+                  <option value="-">- Pilih Hasil -</option>
+                  <option value="Sangat Baik">Sangat Baik</option>
+                  <option value="Baik">Baik</option>
+                  <option value="Cukup">Cukup</option>
+                  <option value="Kurang">Kurang</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
