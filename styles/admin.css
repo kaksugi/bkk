@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header
+{
+	width:absolute;
+	height:150px;
+	background-image:url(../images/headerb.png);
+	postion:top;
+	margin-top:30px;
+	
+}
+
+.menu
+{
+	width:absolute;
+	height:40px;
+	
+	
+	
+}
+
+.content
+{
+	width:absolute;
+	min-height:600px;
+-moz-border-radius:0px 0px 20px 20px; /* Firefox 3.6 and earlier */
+	
+}
+
+.footer
+{
+	width:absolute;
+	min-height:80px;
+	
+}

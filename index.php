@@ -1,152 +1,84 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>jQuery UI tabs integration demo</title>
-
-<link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css" />
-
-<script src="lib/jquery.js" type="text/javascript"></script>
-<script src="js/jquery-ui.min.js" type="text/javascript"></script>
-<script src="js/jquery.validate.js" type="text/javascript"></script>
-
-<script id="demo" type="text/javascript">
-$(document).ready(function() {
-	var tabs = $("#tabs").tabs();
-	var validator = $("#signupform").validate({
-		groups: {
-			birthdate: "birthdateDay birthdateMonth birthdateYear"
-		},
-		errorPlacement: function(label, element) {
-			if (/^birthdate/.test(element[0].name)) {
-				label.insertAfter("#birthdateYear");
-			} else {
-				label.insertAfter(element);
-			}
-		}
-	});
-	
-	// validate the other two selects when one changes to update the whole group
-	var birthdaySelects = $("#birthdateGroup select").click(function() {
-		birthdaySelects.not(this).valid();
-	})
-	
-	// overwrite focusInvalid to activate tab with invalid elements
-	validator.focusInvalid = function() {
-		if( this.settings.focusInvalid ) {
-			try {
-				var focused = $(this.findLastActive() || this.errorList.length && this.errorList[0].element || []).filter(":visible");
-				tabs.tabs("select", tabs.find(">div").index(focused.parent().parent()));
-				focused.focus();
-			} catch(e) {
-				// ignore IE throwing errors when focusing hidden elements
-			}
-		}
-	};
-});
-</script>
-
-<style>
-	body { font-size: 65.2% }
-	label { display: inline-block; width: 8em; }
-	label.error { color: red; margin-left: 0.5em; width: 20em; }
-</style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>BKK SMK NEGERI 1 BAWANG</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
 
 </head>
-<body>
-	
-<form id="signupform">
-	
-	<div id="tabs">
-		<ul>
-			<li><a href="#logindata">Login data</a></li>
-			<li><a href="#personaldata">Personal data</a></li>
-			<li><a href="#subscriptions">Subscriptions</a></li>
-		</ul>
-		<div id="logindata">
-			<p>
-				<label for="username">Username</label>
-				<input id="username" name="username" class= "required" minlength="3" maxlength="20" type="text" />
-			</p>
-			<p>
-				<label for="email">Email address</label>
-				<input id="email" name="email" class="required email" type="text" />
-			</p>
-			<p>
-				<label for="password">Password</label>
-				<input name="password" type="password" class="required" id="password" minlength="4" maxlength="50" />
-			</p>
-			<p>
-				<label for="confirmpassword">Confirm Password</label>
-				<input name="confirmpassword" type="password" class="required" equalTo="#password" id="confirmpassword" />
-			</p>
-		</div>
-		<div id="personaldata">
-			<p>
-				<label for="street">Street</label>
-				<input id="street" name="street" class="required" minlength="3" maxlength="50" type="text" />
-			</p>
-			<p>
-				<label for="city">City</label>
-				<input id="city" name="city" class="required" minlength="3" maxlength="50" type="text" />
-			</p>
-			<p id="birthdateGroup">
-				<label for="birthdateDay">Birthdate</label>
-				<select id="birthdateDay" name="birthdateDay" class="required">
-					<option value="">Day</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>...</option>
-				</select>
-				<select id="birthdateMonth" name="birthdateMonth" class="required">
-					<option value="">Month</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-					<option>9</option>
-					<option>10</option>
-					<option>11</option>
-					<option>12</option>
-				</select>
-				<select id="birthdateYear" name="birthdateYear" class="required">
-					<option value="">Year</option>
-					<option>1950</option>
-					<option>1951</option>
-					<option>1952</option>
-					<option>1953</option>
-					<option>1954</option>
-					<option>1955</option>
-					<option>...</option>
-				</select>
-			</p>
-		</div>
-		<div id="subscriptions">
-			<p>
-				<label for="weekly">Weekly Newsletter</label>
-				<input id="weekly" name="weekly" type="checkbox" />
-			</p>
-			<p>
-				<label for="updates">Product Updates</label>
-				<input id="updates" name="updates" type="checkbox" />
-			</p>
-			<p>
-				<label for="terms">Terms and conditions</label>
-				<input id="terms" name="terms" class="required" type="checkbox" />
-			</p>
-		</div>
-	</div>
-
-	<input type="submit" />
-</form>
-
-
-
-
+<body><center>
+<div class="wrapper col0"><?php include("/template/panel.php"); ?>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1"><?php include("/template/header.php"); ?></div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2"><?php include("/template/menu.php"); ?></div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="featured_slide">
+    <div id="featured_wrap">
+      <ul id="featured_tabs">
+        <li><a href="#fc1">Contoh Slide<br />
+          <span>Contoh Slide Keterangan</span></a></li>
+        <li><a href="#fc2">Contoh Slide<br />
+          <span>Contoh Slide Keterangan</span></a></li>
+        <li><a href="#fc3">Contoh Slide<br />
+          <span>Contoh Slide Keterangan</span></a></li>
+        <li class="last"><a href="#fc4">Contoh Slide<br />
+          <span>Contoh Slide Keterangan</span></a></li>
+      </ul>
+      <div id="featured_content">
+        <div class="featured_box" id="fc1"><img src="images/demo/1.gif" alt="" />
+          <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
+        </div>
+        <div class="featured_box" id="fc2"><img src="images/demo/2.gif" alt="" />
+          <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
+        </div>
+        <div class="featured_box" id="fc3"><img src="images/demo/3.gif" alt="" />
+          <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
+        </div>
+        <div class="featured_box" id="fc4"><img src="images/demo/4.gif" alt="" />
+          <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+    <div id="hpage">aadfa
+      <ul>
+        <li>
+          <h2>Info Lowongan Terbaru</h2>
+          <div class="imgholder"><a href="#"><img src="images/demo/200x140.gif" alt="" /></a></div>
+          <p>Info Lowongan Terbaru</p>
+          <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </li>
+        <li>
+          <h2>Info Lowongan Terbaru</h2>
+          <div class="imgholder"><a href="#"><img src="images/demo/200x140.gif" alt="" /></a></div>
+          <p>Info Lowongan Terbaru</p>
+          <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </li>
+        <li class="last">
+          <h2>&nbsp;</h2>
+        </li>
+        <li class="last"> </li>
+      </ul>
+      <br class="clear" />
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+<?php include("/template/footer.php"); ?>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+ <?php include("/template/copyright.php"); ?>
+</div>
+</center>
 </body>
 </html>
